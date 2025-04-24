@@ -139,7 +139,7 @@ app.get('/', (req, res) => {
   res.send('API LGT Maintenance, routes disponibles : /api/operations, /api/details, /fichier');
 });
 // ✅ Démarrage du serveur
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Serveur backend en écoute sur http://localhost:${PORT}`);
 });
