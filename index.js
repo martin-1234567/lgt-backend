@@ -137,7 +137,7 @@ app.get('/api/details', async (req, res) => {
 
 
 // ✅ Démarrage du serveur
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Serveur backend en écoute sur http://localhost:${PORT}`);
 });
