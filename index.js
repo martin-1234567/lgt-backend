@@ -135,7 +135,9 @@ app.get('/api/details', async (req, res) => {
   }
 });
 
-
+app.get('/', (req, res) => {
+  res.send('API LGT Maintenance, routes disponibles : /api/operations, /api/details, /fichier');
+});
 // ✅ Démarrage du serveur
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
